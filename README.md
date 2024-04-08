@@ -21,4 +21,4 @@ mysql -u usuarioCAP -p
 source {ruta del archivo}/tabla.sql
 exit
 mysql -u root -p
-source {ruta de larchivo}/permisos.sql
+source {ruta del archivo}/permisos.sql

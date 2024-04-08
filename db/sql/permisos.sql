@@ -5,7 +5,7 @@ REVOKE ALL PRIVILEGES ON *.* FROM 'usuarioCAP'@'localhost';
 
 -- Damos permisos para que pueda modificar solo la base de datos auth
 
-GRANT CREATE TABLE ON auth.* TO 'usuarioCAP'@'localhost';
+GRANT CREATE ON auth.* TO 'usuarioCAP'@'localhost';
 GRANT SELECT, INSERT ON auth.usuarios TO 'usuarioCAP'@'localhost';
 
 FLUSH PRIVILEGES;
