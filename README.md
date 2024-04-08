@@ -19,3 +19,6 @@ mysql -u usuarioCAP -p
 - En el código está la contraseña, así que puedes verla en cualquier momento e incluso modificarla lo que sería lo más recomendable.
 
 source {ruta del archivo}/tabla.sql
+exit
+mysql -u root -p
+source {ruta de larchivo}/permisos.sql
