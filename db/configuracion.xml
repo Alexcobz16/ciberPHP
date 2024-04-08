@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuracion>
+    <bd>
+        <dsn>mysql:host=localhost;dbname=auth</dsn>
+        <usuario>usuarioCAP</usuario>
+        <contrasena>ciber2324.</contrasena>
+    </bd>
+</configuracion>

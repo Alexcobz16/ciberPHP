@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Definición del elemento raíz y namespace -->
+  <xs:element name="configuracion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="bd" type="bdType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Definición del tipo de elemento 'bd' -->
+  <xs:complexType name="bdType">
+    <xs:sequence>
+      <xs:element name="dsn" type="xs:string"/>
+      <xs:element name="usuario" type="xs:string"/>
+      <xs:element name="contrasena" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
