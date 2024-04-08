@@ -1,5 +1,6 @@
-*---------- Entramos en MySQL con usuarioCAP y ejecutamos este fichero SQL
+---------- Entramos en MySQL con usuarioCAP y ejecutamos este fichero SQL
 -- Crear la base de datos 'auth'
+
 CREATE DATABASE IF NOT EXISTS auth;
 
 -- Usar la base de datos 'auth'

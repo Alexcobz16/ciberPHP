@@ -5,7 +5,5 @@ CREATE USER 'usuarioCAP'@'localhost' IDENTIFIED BY 'ciber2324.';
  
 ---------- Necesitas permisos de SELECT para verificar el usuario y de INSERT para añadir el usuario que quieras.
 GRANT CREATE ON *.* TO 'usuarioCAP'@'localhost';
-GRANT CREATE TABLE ON auth.* TO 'usuarioCAP'@'localhost';
-GRANT SELECT, INSERT ON auth.usuarios TO 'usuarioCAP'@'localhost';
 
 FLUSH PRIVILEGES;
