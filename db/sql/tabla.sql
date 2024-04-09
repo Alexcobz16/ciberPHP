@@ -10,6 +10,7 @@ USE auth;
 CREATE TABLE IF NOT EXISTS usuarios (
     ID INT AUTO_INCREMENT PRIMARY KEY,
     usuario VARCHAR(50) NOT NULL,
-    contraseña VARCHAR(50) NOT NULL,
+    contraseña VARCHAR(250) NOT NULL,
     rol VARCHAR(25)
 );
+

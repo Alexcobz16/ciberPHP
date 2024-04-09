@@ -2,7 +2,7 @@
 
 -- Denegamos todos los permisos para el usuario
 REVOKE ALL PRIVILEGES ON *.* FROM 'usuarioCAP'@'localhost';
-
+REVOKE CREATE ON *.* TO 'usuarioCAP'@'localhost';
 -- Damos permisos para que pueda modificar solo la base de datos auth
 
 GRANT CREATE ON auth.* TO 'usuarioCAP'@'localhost';
