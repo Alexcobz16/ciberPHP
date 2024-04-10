@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+ini_set('display_errors', 1);
 // Comprobar si existe sesión abierta. Nos pide un usuario y el rol del usuario.
 if(isset($_SESSION['usuario'])){
     /**
