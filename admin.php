@@ -19,10 +19,10 @@ if(isset($_SESSION['usuario']) && isset($_SESSION['rol'])){
         }
 
     }else{
-        header('Location: no-autorizado');
+        header('Location: no-autorizado.php');
     }
 }else{
-    header('Location: no-autorizado');
+    header('Location: no-autorizado.php');
 }
 
 ?>
