@@ -6,6 +6,6 @@ REVOKE CREATE ON *.* TO 'usuarioCAP'@'localhost';
 -- Damos permisos para que pueda modificar solo la base de datos auth
 
 GRANT CREATE ON auth.* TO 'usuarioCAP'@'localhost';
-GRANT SELECT, INSERT ON auth.usuarios TO 'usuarioCAP'@'localhost';
+GRANT SELECT, INSERT, UPDATE ON auth.usuarios TO 'usuarioCAP'@'localhost';
 
 FLUSH PRIVILEGES;
