@@ -8,9 +8,6 @@ if(isset($_SESSION['usuario']) && isset($_SESSION['rol'])){
        ?>
        <br/>
         <a href="admin.php">Ir a página admin</a>
-        <form action=""method="POST">
-            <input type="submit" name="logout" value="Cerrar sesión"/>
-        </form>
        <?php
 
         if(isset($_POST['logout'])){
@@ -19,6 +16,11 @@ if(isset($_SESSION['usuario']) && isset($_SESSION['rol'])){
         }
 
     }
+    ?>
+        <form action=""method="POST">
+            <input type="submit" name="logout" value="Cerrar sesión"/>
+        </form>
+    <?php
 }else{
     header('Location: login.php?nologin');
 }
