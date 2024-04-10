@@ -9,18 +9,16 @@ if(isset($_SESSION['usuario']) && isset($_SESSION['rol'])){
        <br/>
         <a href="admin.php">Ir a página admin</a>
        <?php
-
-        if(isset($_POST['logout'])){
-            session_destroy();
-            header('Location: login.php');
-        }
-
     }
     ?>
         <form action=""method="POST">
             <input type="submit" name="logout" value="Cerrar sesión"/>
         </form>
     <?php
+            if(isset($_POST['logout'])){
+                session_destroy();
+                header('Location: login.php');
+            }    
 }else{
     header('Location: login.php?nologin');
 }
