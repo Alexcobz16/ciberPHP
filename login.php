@@ -83,7 +83,7 @@ if(isset($_POST['Enviar'])){
             }
         }elseif(md5($_POST['psswd']) == $resultado['contraseña']){
             // Si se trata de un hash MD5, actualizar a un hash más seguro
-            $nuevo_hash = password_hash($_POST['psswd'], PASSWORD_DEFAULT);
+            $nuevo_hash = password_hash($_POST['psswd'], PASSWORD_BCRYPT, 16);
             $stmt = $conexion->prepare("UPDATE usuarios SET contraseña = ? WHERE usuario = ?");
             $stmt->execute([$nuevo_hash, $_POST['usuario']]);
 
